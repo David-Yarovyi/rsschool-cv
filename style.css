@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+main {
+  margin: 70px 70px 40px 70px;
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 0 20px black;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+}
+
+.content-row {
+  display: flex;
+  flex: 1 1 auto; /* занимает всё доступное пространство между header и footer */
+  min-height: 0;
+}
+
+header {
+  background-color: rgb(179, 216, 231);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  ;
+}
+
+.logo {
+  top: 2px;
+  right: 45px;
+  width: 55px;
+  height: 55px;
+  position: relative;
+  transition: 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+  }
+
+}
+
+.title {
+  padding-left: 10px;
+  margin-top: 10px;
+  color: rgb(34, 34, 34);
+}
+
+.back-link {
+  position: relative;
+  padding-right: 10px;
+  top: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+  transition: 0.5s ease;
+
+  &:hover {
+    transition: 0.5s ease;
+    color: grey;
+    font-size: 27px;
+  }
+}
+
+.left-side {
+  width: 400px;
+  background-color: rgb(179, 175, 175);
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.name {
+  font-size: 32px;
+  color: black;
+}
+
+.description {
+  margin: 10px;
+  font-weight: 600;
+}
+
+.title-leftbar {
+  font-size: 25px;
+  color: black;
+}
+
+.leftbar-list {
+  margin: 5px;
+  list-style-type: none;
+  color: yellow;
+  font-size: 20px;
+}
+
+.leftbar-list-2 {
+  margin: 5px;
+  list-style-type: none;
+  color: rgb(87, 87, 235);
+  font-size: 20px;
+}
+
+.right-side {
+  position: relative;
+  width: 687px;
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.rightbar-list {
+  margin: 5px;
+  list-style-type: none;
+  color: rgb(87, 87, 235);
+  font-size: 20px;
+}
+
+.title-code {
+  font-size: 25px;
+}
+
+.code {
+  margin: 10px;
+  font-weight: 600;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(179, 216, 231);
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  display: flex;
+}
+
+.git {
+  padding-top: 3px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+  color: black;
+  transition: 0.5s ease;
+
+  &:hover {
+    transition: 0.5s ease;
+    color: darkblue;
+    font-size: 24px;
+  }
+}
